@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background: amber;
+}
+/* hide scrollbar for chrome, Safari and Opera*/
+body::-webkit-scrollbar{
+  display: none;
+}
+/* hide scrollbar for IE, Edge, Firefox */
+body{
+  -ms-overflow-style:none; /* IE and Edge*/
+ scrollbar-width:none; /* Firefox */ 
+}
+p{
+  text-align: justify;
+  font-size: 14px;
+}
+.error{
+  color: red;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: italic;
+}
